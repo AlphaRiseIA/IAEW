@@ -1,16 +1,73 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-    <title>Analitzador de Colors IA</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Analitzador de Colors amb IA</h1>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Analitza">
-        </form>
+  <head> 
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+  
+     gtag('config', 'AW-438746073');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="tm-welcome-section">
+      <div class="container tm-navbar-container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav ml-auto">               
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <div class="tm-search-form-container">
+      <div class="form-inline tm-search-form">
+        <div class="text-uppercase tm-new-release text-center">Analizador de colores</div>
+        <div class="form-group tm-search-box">
+          <input id="textInput" type="text" name="msg" placeholder="Escribe aqui...">
+          <button id="buttonInput" name="button" type="submit" onclick="getBotResponse()">send</button>
+        </div>
+        <div id="chatbox">
+          <p class="botText"><span>¡Hola! ¡Yo proceso la información sobre los colores!</span></p>
+        </div>
+        <div class="form-group tm-advanced-box">
+          <a href="#" class="tm-text-white"></a>
+        </div>
+        <script>
+          function getBotResponse() {
+            console.log('hola')
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+          //document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            $.get("/get", { msg: rawText }).done(function(results) {
+              console.log(results)
+              var botHtml = '<p class="botText"><span>' + results + '</span></p>';
+              $("#chatbox").append(botHtml);
+            //document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            });
+          }
+  
+          $("#textInput").keypress(function(e)  {
+              if(e.which == 13) {
+                  getBotResponse();
+              }
+          })
+//         $("#buttonInput").click(function()  {
+//           console.log('pi3.14')
+//           getBotResponse();
+//         })
+        </script>
+      </div>
+    </div> 
+    <footer class="footer">
+      <p>&copy;IliaArcasJimenez</p>
+    </footer>
 </html>
