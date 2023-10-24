@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analitzador de Colors</title>
+</head>
+<body>
+    <h1>Selecciona una imagen para analizar</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Analizar">
+    </form>
+    <script>
+        function changeBackground() {
+            var input = document.getElementById("backgroundFile");
+            var file = input.files[0];
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                document.body.style.backgroundImage = 'url(' + e.target.result + ')';
+            };
+
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
