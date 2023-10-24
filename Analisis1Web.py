@@ -101,7 +101,7 @@ def index():
             color_var, luminosity_str = analitza_colors(file_path)
             return render_template('result.html', color_var=color_var, luminosity_str=luminosity_str, image_path='uploads/uploaded_image.jpg')
 
-    return render_template('index.html')
+    return render_template('index2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
