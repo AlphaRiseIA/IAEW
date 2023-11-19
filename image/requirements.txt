@@ -1,0 +1,5 @@
+flask
+numpy
+nltk
+opencv-python
+requests
