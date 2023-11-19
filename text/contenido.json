@@ -1,0 +1,112 @@
+{
+    "contenido": [
+        {
+            "tag": "vermell_alt",
+            "patrones": ["vermell fosc"],
+            "respuestas": [
+                "Transmet una poderosa sensacio de passio i emocio",
+                "Genera un ambient vibrant i ple d'energia",
+                "Associat amb sentiments forts i actius"
+            ]
+        },
+        {
+            "tag": "vermell_baix",
+            "patrones": ["vermell clar"],
+            "respuestas": [
+                "Pot percebre's com apagat i sense vitalitat en la seva forma suau",
+                "Transmet una sensacio de manca d'intensitat i emocio",
+                "Genera un ambient menys estimulant i dinamic"
+            ]
+        },
+        {
+            "tag": "blau_alt",
+            "patrones": ["blau fosc"],
+            "respuestas": [
+                "Transmet una sensacio forta de confianca i seguretat",
+                "Pot generar un ambient sere i equilibrat",
+                "Associat amb sentiments de calma i estabilitat emocional"
+            ]
+        },
+        {
+            "tag": "blau_baix",
+            "patrones": ["blau clar"],
+            "respuestas": [
+                "Pot percebre's com fred i distant en la seva forma suau",
+                "Transmet una sensacio de manca d'energia i vitalitat",
+                "Genera un ambient menys calid i acollidor"
+            ]
+        },
+        {
+            "tag": "verd_alt",
+            "patrones": ["verd fosc"],
+            "respuestas": [
+                "Transmet una intensitat forta de frescor i salut",
+                "Pot generar un ambient vibrant i energic",
+                "Associat amb sentiments de vitalitat i benestar"
+            ]
+        },
+        {
+            "tag": "verd_baix",
+            "patrones": ["verd clar"],
+            "respuestas": [
+                "Pot percebre's com opac i sense vida en la seva forma suau",
+                "Transmet una sensacio de manca de vitalitat i frescor",
+                "Genera un ambient menys estimulant i dinamic"
+            ]
+        },
+        {
+            "tag": "groc_alt",
+            "patrones": ["groc fosc"],
+            "respuestas": [
+                "Transmet una intensitat forta de vitalitat i positivitat",
+                "Pot generar un ambient alegre i estimulant",
+                "Associat amb sentiments de creativitat i motivacio"
+            ]
+        },
+        {
+            "tag": "groc_baix",
+            "patrones": ["groc clar"],
+            "respuestas": [
+                "Pot percebre's com apagat i desinteressant en la seva forma suau",
+                "Transmet una sensacio de manca d'energia i positivitat",
+                "Genera un ambient menys alegre i estimulant"
+            ]
+        },
+        {
+            "tag": "taronja_alt",
+            "patrones": ["taronja fosc"],
+            "respuestas": [
+                "Transmet una intensitat forta de vitalitat i positivitat",
+                "Pot generar un ambient alegre i estimulant",
+                "Associat amb sentiments de creativitat i motivacio"
+            ]
+        },
+        {
+            "tag": "taronja_baix",
+            "patrones": ["taronja clar"],
+            "respuestas": [
+                "Pot percebre's com apagat i desinteressant en la seva forma suau",
+                "Transmet una sensacio de manca d'energia i positivitat",
+                "Genera un ambient menys alegre i estimulant"
+            ]
+        },
+        {
+            "tag": "lluminositat_alta",
+            "patrones": ["lluminos"],
+            "respuestas": [
+                "La alta llum genera un ambient mes il*luminat i atractiu",
+                "Els llocs mes lluminosos representen sentiments positius que negatius",
+                "La alta lluminositat pot millorar la concentracio i el rendiment en el treball o estudis, proporcionant un entorn mes estimulant i positiu."
+            ]
+        },
+        {
+            "tag": "lluminositat_baixa",
+            "patrones": ["fosc"],
+            "respuestas": [
+                "Els llocs mes foscos representen mes sentiments negatius que positius",
+                "La baixa lluminositat pot afectar negativament al treball o estudis, disminuint la concentracio i la productivitat, i generant un ambient menys propici per al rendiment academic o laboral.",
+                "La baixa llum genera un ambient mes fosc i melancolic"
+            ]
+        }
+    ]
+}
