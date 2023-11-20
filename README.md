@@ -21,6 +21,7 @@ I hope you enjoy my work!
 **Content:**
 
 -[Installation](#install)
+-[Author](#author)
 
 
 <a id='install'></a>
@@ -79,6 +80,8 @@ For runing the code, we need to go to each terminal and run the python file with
 python xxxxxx.py 
 ```
 Here you can easily tab, till you get the file you want.
+
+<a id='author'></a>
 ## Authors
 
 - [@Alphary](https://www.github.com/AlphaRiseIA)
