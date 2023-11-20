@@ -22,7 +22,8 @@ I hope you enjoy my work!
 
 -[Installation](#install)
 
--[Work](#work)
+
+<a id='install'></a>
 ## Installation
 
 How to install and use my project?
