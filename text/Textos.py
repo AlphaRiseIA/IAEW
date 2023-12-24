@@ -24,10 +24,9 @@ for contenido in datos["contenido"]:
         palabras.extend(auxPalabra)
         auxX.append(auxPalabra)
         auxY.append(contenido["tag"])
-
         if contenido["tag"] not in tags:
             tags.append(contenido["tag"])
-
+            
 palabras = [stemmer.stem(w.lower()) for w in palabras if w != "?"]
 palabras = sorted(list(set(palabras)))
 tags = sorted(tags)
@@ -81,11 +80,8 @@ def IAEW(entrada):
 
         return (random.choice(respuesta))
 
-
-
 app = Flask(__name__, template_folder='templates',
                    static_folder='../chatbot/static', static_url_path='/static')
-
 
 @app.route("/get")
 def getBotResponse():

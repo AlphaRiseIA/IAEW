@@ -109,7 +109,6 @@ def index():
             response_post = req.post(url_post, data=data_post)
             print(response_post.text)
             palabras_especificas = re.findall(r'\b(blau fosc|vermell fosc|groc fosc|verd fosc|taronja fosc|blau clar|vermell clar|groc clar|verd clar|taronja clar|blau|vermell|groc|verd|taronja|lluminosa|fosca)\b', response_post.text, flags=re.IGNORECASE)
-            # Imprimir las palabras encontradas
             print("Palabras encontradas:", palabras_especificas)
             palabras_unicas = list(set(palabras_especificas))
 
@@ -121,7 +120,7 @@ def index():
                 resp = req.get(url)
                 respuesta = f"Resposta{x}: {resp.text}"
                 print(respuesta)
-                resultado.append(respuesta)  # Agregar la respuesta a la lista
+                resultado.append(respuesta)  
                 x += 1
 
             #return render_template('result.html', color_var=color_var, luminosity_str=luminosity_str, image_path='uploads/uploaded_image.jpg')

@@ -3,11 +3,8 @@
 <head>
     <title>Analitzador de Colors</title>
 </head>
-
-
 <body>
     <h1>Selecciona una imagen para analizar</h1>
-
     <form action="/" method="post" enctype="multipart/form-data">
         <input type="file" name="file"><br><br>
         <input type="submit" value="Analizar">
@@ -21,11 +18,9 @@
             reader.onload = function(e) {
                 document.body.style.backgroundImage = 'url(' + e.target.result + ')';
             };
-
             reader.readAsDataURL(file);
         }
     </script>
-
 </body>
 <footer class="footer">
     <p>&copy;IliaArcasJimenez - AlphaRiseIA</p>
